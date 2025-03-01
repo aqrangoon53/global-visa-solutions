@@ -18,9 +18,36 @@ body {
     margin: 0 auto;
 }
 
+/* Spacing for all sections */
+section {
+    padding: 60px 0;
+}
+
+/* Mobile Responsiveness - Services section */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Reduce the font size of header */
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    .service {
+        width: 100%; /* Stack the services vertically */
+        margin: 10px 0;
+    }
+
+    .cta-btn {
+        font-size: 1.5em; /* Increase font size for mobile */
+        padding: 15px 40px;
+    }
+}
+
+
 /* Header Section */
 header {
-    background-color: #003366;
+    background-color: #004080; /* Dark blue header */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -52,6 +79,10 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
+    padding: 100px 0; /* Increase padding for more breathing space */
+}
+
+.hero {
     background: url('https://via.placeholder.com/1500x800') center/cover no-repeat;
     color: #fff;
     text-align: center;
@@ -68,9 +99,17 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
+/* Container for center alignment */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Update button color */
 .cta-btn {
     padding: 10px 30px;
-    background-color: #ff6600;
+    background-color: #0066cc; /* Bright blue button */
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
@@ -78,10 +117,59 @@ nav ul li a:hover {
 }
 
 .cta-btn:hover {
-    background-color: #ff8533;
+    background-color: #004080; /* Darker blue on hover */
 }
 
+/* Button Hover Effects */
+.cta-btn {
+    padding: 12px 30px;
+    background-color: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #004080;
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Buttons for contact form */
+button {
+    padding: 15px 30px;
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+}
+
+
 /* Services Section */
+/* Service section layout - Adjust for mobile responsiveness */
+.service {
+    width: 30%;
+    margin: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .service {
+        width: 100%; /* Stack services vertically on mobile */
+        margin: 10px 0;
+    }
+}
+
 #services {
     background-color: #fff;
     padding: 60px 0;
@@ -102,6 +190,12 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+/* Add hover effect for the service boxes */
+.service:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .service h3 {
